@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rahul Kumar — AIML Student Portfolio · AI, Robotics & Web Development" />
+  <title>Rahul Kumar | AIML & Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">RK<span class="accent">.</span></a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#certificates" class="nav__link">Certificates</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#" id="linkedin-header" class="nav__social" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun theme-toggle__icon theme-toggle__icon--light"></i>
+          <i class="fas fa-moon theme-toggle__icon theme-toggle__icon--dark"></i>
+        </button>
+        <button class="nav__burger" id="nav-burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text reveal">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name" id="hero-name">Rahul Kumar</h1>
+          <p class="hero__tagline" id="hero-tagline">AIML Student · AI Developer · Web Designer</p>
+          <p class="hero__bio" id="hero-bio">
+            Building intelligent systems that bridge machine learning, autonomous robotics, and human-centered web experiences.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="#" id="hero-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" id="hero-github" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" id="hero-email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap reveal reveal--delay">
+          <div class="hero__photo-frame">
+            <img src="assets/profile.svg" alt="Professional photo" class="hero__photo" id="hero-photo" />
+            <div class="hero__photo-ring"></div>
+          </div>
+          <div class="hero__badge">
+            <i class="fas fa-robot"></i>
+            <span>Robotics & AI</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">About Me</span>
+          <h2 class="section__title">Passionate about <span class="accent">intelligent systems</span></h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__card reveal">
+            <div class="about__icon"><i class="fas fa-brain"></i></div>
+            <h3>AIML Specialization</h3>
+            <p id="about-aiml">Pursuing B.Tech in AIML with focus on deep learning, computer vision, and NLP. Experienced in building end-to-end ML pipelines from data preprocessing to model deployment.</p>
+          </div>
+          <div class="about__card reveal reveal--delay">
+            <div class="about__icon"><i class="fas fa-robot"></i></div>
+            <h3>Robotics Projects</h3>
+            <p id="about-robotics">Hands-on experience with ROS, Arduino, and sensor fusion. Built autonomous navigation systems, robotic arms, and simulation prototypes in Gazebo.</p>
+          </div>
+          <div class="about__card reveal reveal--delay-2">
+            <div class="about__icon"><i class="fas fa-code"></i></div>
+            <h3>Web Design</h3>
+            <p id="about-web">Creating responsive, accessible web applications with modern HTML, CSS, and JavaScript. Passionate about clean UI/UX and performance-first development.</p>
+          </div>
+        </div>
+        <div class="about__stats reveal">
+          <div class="about__stat">
+            <span class="about__stat-num" id="stat-projects">12+</span>
+            <span class="about__stat-label">Projects</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" id="stat-certificates">8</span>
+            <span class="about__stat-label">Certificates</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" id="stat-technologies">15+</span>
+            <span class="about__stat-label">Technologies</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" id="stat-experience">2+</span>
+            <span class="about__stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Portfolio</span>
+          <h2 class="section__title">Featured <span class="accent">Projects</span></h2>
+        </div>
+        <div class="projects__filters reveal" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="aiml">AIML</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+        </div>
+        <div class="projects__grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Expertise</span>
+          <h2 class="section__title">Skills & <span class="accent">Tools</span></h2>
+        </div>
+        <div class="skills__grid" id="skills-grid"></div>
+        <div class="skills__categories reveal">
+          <div class="skills__category">
+            <h4>Machine Learning</h4>
+            <div class="skills__tags" id="skills-ml"></div>
+          </div>
+          <div class="skills__category">
+            <h4>Robotics</h4>
+            <div class="skills__tags" id="skills-robotics"></div>
+          </div>
+          <div class="skills__category">
+            <h4>Web Development</h4>
+            <div class="skills__tags" id="skills-web"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Career</span>
+          <h2 class="section__title">Experience & <span class="accent">Education</span></h2>
+          <p class="section__subtitle">
+            <i class="fab fa-linkedin-in"></i> Synced from LinkedIn
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__col">
+            <h3 class="timeline__heading"><i class="fas fa-briefcase"></i> Experience</h3>
+            <div class="timeline__list" id="experience-list"></div>
+          </div>
+          <div class="timeline__col">
+            <h3 class="timeline__heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="timeline__list" id="education-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section certificates" id="certificates">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Achievements</span>
+          <h2 class="section__title">Certificates & <span class="accent">Awards</span></h2>
+        </div>
+        <div class="certificates__grid" id="certificates-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Connect</span>
+          <h2 class="section__title">Let's <span class="accent">Work Together</span></h2>
+          <p class="section__subtitle">Open to internships, research collaborations, and freelance projects.</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <a href="#" class="contact__card" id="contact-linkedin" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in"></i>
+              <div>
+                <span class="contact__label">LinkedIn</span>
+                <span class="contact__value" id="contact-linkedin-text">linkedin.com/in/stunner-boy</span>
+              </div>
+            </a>
+            <a href="#" class="contact__card" id="contact-email">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact__label">Email</span>
+                <span class="contact__value" id="contact-email-text">stunnerboy489@gmail.com</span>
+              </div>
+            </a>
+            <a href="#" class="contact__card" id="contact-github" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="contact__label">GitHub</span>
+                <span class="contact__value" id="contact-github-text">github.com/stunnerboy</span>
+              </div>
+            </a>
+          </div>
+          <form class="contact__form reveal reveal--delay" id="contact-form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@email.com" />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="footer-year"></span> <span id="footer-name">Rahul Kumar</span>. Built with passion for AI & Robotics.</p>
+      <div class="footer__links">
+        <a href="#" id="footer-linkedin" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" id="footer-github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="#" id="footer-email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
